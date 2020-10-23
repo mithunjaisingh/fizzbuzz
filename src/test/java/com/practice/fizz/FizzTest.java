@@ -24,14 +24,28 @@ public class FizzTest
     @Test
     public void ifValidNumberIsSent()
     {
-        int value =fizz.gamePlan(0);
+        int value =(Integer) fizz.gamePlan(0);
         assertEquals( 0,value );
     }
 
     @Test
     public void ifNegativeNumberIsSetItShouldReturnTheNegativeNumber()
     {
-        int value =fizz.gamePlan(-2);
+        int value =(Integer)fizz.gamePlan(-2);
         assertEquals(-2,value);
+    }
+
+    @Test
+    public void ifMultiplierBy3IsSent()
+    {
+        String value = (String)fizz.gamePlan(3);
+        assertEquals("fizz",value);
+    }
+
+    @Test
+    public void ifMultiplierByNegative3IsSent()
+    {
+        String value = (String)fizz.gamePlan(-369 );
+        assertEquals("fizz",value);
     }
 }

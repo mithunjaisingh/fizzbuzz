@@ -1,8 +1,12 @@
 package com.practice.fizz;
 
+import java.io.Serializable;
+
 public class Fizz {
 
-    public int gamePlan(int i) {
+    public Serializable gamePlan(int i) {
+        if(i%3==0)
+            return "fizz";
         return i;
     }
 }
