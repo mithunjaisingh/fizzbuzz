@@ -7,13 +7,13 @@ import org.junit.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class FizzTest
 {
     /**
      * Rigorous Test :-)
      */
     @Test
-    public void shouldAnswerWithTrue()
+    public void ifValidNumberIsSent()
     {
         assertTrue( true );
     }
