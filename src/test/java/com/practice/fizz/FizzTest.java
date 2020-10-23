@@ -69,4 +69,18 @@ public class FizzTest
         String value = (String)fizz.gamePlan(-400 );
         assertEquals("buzz",value);
     }
+
+    @Test
+    public void ifMultiplierBy5And3IsSent()
+    {
+        String value = (String)fizz.gamePlan(15 );
+        assertEquals("fizz buzz",value);
+    }
+
+    @Test
+    public void ifNegativeMultiplierBy5And3IsSent()
+    {
+        String value = (String)fizz.gamePlan(-330 );
+        assertEquals("fizz buzz",value);
+    }
 }
