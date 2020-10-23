@@ -24,15 +24,15 @@ public class FizzTest
     @Test
     public void ifValidNumberIsSent()
     {
-        int value =(Integer) fizz.gamePlan(1);
-        assertEquals( 1,value );
+        Long value =(Long) fizz.gamePlan(1);
+        assertEquals(Long.valueOf(1),value );
     }
 
     @Test
     public void ifNegativeNumberIsSetItShouldReturnTheNegativeNumber()
     {
-        int value =(Integer)fizz.gamePlan(-2);
-        assertEquals(-2,value);
+        Long value =(Long)fizz.gamePlan(-2);
+        assertEquals(Long.valueOf(-2),value);
     }
 
     @Test
@@ -52,8 +52,8 @@ public class FizzTest
     @Test
     public void if0IsSentThenReturnZero()
     {
-        int value=(Integer) fizz.gamePlan(0);
-        assertEquals(0,value);
+        Long value=(Long) fizz.gamePlan(0);
+        assertEquals(Long.valueOf(0),value);
     }
 
     @Test

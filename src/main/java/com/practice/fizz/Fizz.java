@@ -4,15 +4,16 @@ import java.io.Serializable;
 
 public class Fizz {
 
-    public Serializable gamePlan(int i) {
+    public Serializable gamePlan(long i) {
         if(i==0)
             return i;
-        if(i%5==0 && i%3==0)
+        else if(i%5==0 && i%3==0)
             return "fizz buzz";
-        if(i%3==0)
+        else if(i%3==0)
             return "fizz";
-        if(i%5==0)
+        else if(i%5==0)
             return "buzz";
-        return i;
+        else
+            return i;
     }
 }
