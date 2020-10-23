@@ -1,5 +1,6 @@
 package com.practice.fizz;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -15,6 +16,8 @@ public class FizzTest
     @Test
     public void ifValidNumberIsSent()
     {
-        assertTrue( true );
+        Fizz fizz = new Fizz();
+        int value =fizz.gamePlan(0);
+        assertEquals( 0,value );
     }
 }
