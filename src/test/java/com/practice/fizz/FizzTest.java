@@ -24,8 +24,8 @@ public class FizzTest
     @Test
     public void ifValidNumberIsSent()
     {
-        int value =(Integer) fizz.gamePlan(0);
-        assertEquals( 0,value );
+        int value =(Integer) fizz.gamePlan(1);
+        assertEquals( 1,value );
     }
 
     @Test
@@ -47,5 +47,12 @@ public class FizzTest
     {
         String value = (String)fizz.gamePlan(-369 );
         assertEquals("fizz",value);
+    }
+
+    @Test
+    public void if0IsSentThenReturnZero()
+    {
+        int value=(Integer) fizz.gamePlan(0);
+        assertEquals(0,value);
     }
 }
